@@ -1,6 +1,11 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import pineappleImage from '../images/img-9.jpg';
+import appleImage from '../images/img-2.jpg';
+import pearImage from '../images/img-5.jpg';
+import watermelonImage from '../images/img-4.jpg';
+import lemonImage from '../images/img-8.jpg';
 
 function Cards() {
   return (
@@ -10,13 +15,13 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
+              src={pineappleImage}
               text='Find out which country grows the most pineapples'
               label='Pineapples'
               path='/pineapple-trivia'
             />
             <CardItem
-              src='images/img-2.jpg'
+              src={appleImage}
               text='Learn about apples from the New York Apple Association'
               label='Apples'
               path='https://www.applesfromny.com/about-nyaa/apple-trivia/'
@@ -24,19 +29,19 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-5.jpg'
+              src={pearImage}
               text='Learn which country is responsible for producing most of the worlds pears'
               label='Pears'
               path='/pear-trivia'
             />
             <CardItem
-              src='images/img-4.jpg'
+              src={watermelonImage}
               text='Find out where watermelons orginiated from'
               label='Watermelons'
               path='/watermelon-trivia'
             />
             <CardItem
-              src='images/img-8.jpg'
+              src={lemonImage}
               text='Click here if you like sour fruits'
               label='Lemons'
               path='/lemon-trivia'

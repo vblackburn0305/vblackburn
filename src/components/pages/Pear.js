@@ -1,5 +1,6 @@
 import React from 'react';
 import './Pear.css';
+import pearImage from '../../images/img-19.jpg'
 
 function Pear() {
   return (
@@ -44,7 +45,7 @@ function Pear() {
         </tbody>
       </table>
       <div className="pear-image-container">
-        <img src="images/img-19.jpg" alt="Pears" className="pear-image" />
+        <img src={pearImage} alt="Pears" className="pear-image" />
       </div>
     </div>
   );
