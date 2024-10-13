@@ -42,17 +42,17 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/favorite" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/vblackburn/favorite" className="nav-links" onClick={closeMobileMenu}>
                 My Favorite
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/iconic" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/vblackburn/iconic" className="nav-links" onClick={closeMobileMenu}>
                 Iconic
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/popular" className="nav-links-mobile" onClick={closeMobileMenu}>
+              <Link to="/vblackburn/popular" className="nav-links-mobile" onClick={closeMobileMenu}>
                 popular
               </Link>
             </li>

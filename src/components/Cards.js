@@ -18,7 +18,7 @@ function Cards() {
               src={pineappleImage}
               text='Find out which country grows the most pineapples'
               label='Pineapples'
-              path='/pineapple-trivia'
+              path='/vblackburn/pineapple-trivia'
             />
             <CardItem
               src={appleImage}
@@ -32,19 +32,19 @@ function Cards() {
               src={pearImage}
               text='Learn which country is responsible for producing most of the worlds pears'
               label='Pears'
-              path='/pear-trivia'
+              path='/vblackburn/pear-trivia'
             />
             <CardItem
               src={watermelonImage}
               text='Find out where watermelons orginiated from'
               label='Watermelons'
-              path='/watermelon-trivia'
+              path='/vblackburn/watermelon-trivia'
             />
             <CardItem
               src={lemonImage}
               text='Click here if you like sour fruits'
               label='Lemons'
-              path='/lemon-trivia'
+              path='/vblackburn/lemon-trivia'
             />
           </ul>
         </div>

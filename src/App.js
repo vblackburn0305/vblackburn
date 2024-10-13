@@ -17,13 +17,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/vblackburn" element={<Home />} />
-        <Route path="/favorite" element={<Favorite />} />
-        <Route path="/iconic" element={<Iconic />} />
-        <Route path="/popular" element={<Popular />} />
-        <Route path="/pineapple-trivia" element={<Pineapple />} />
-        <Route path="/pear-trivia" element={<Pear />} />
-        <Route path="/watermelon-trivia" element={<Watermelon />} />
-        <Route path="/lemon-trivia" element={<Lemon />} />
+        <Route path="/vblackburn/favorite" element={<Favorite />} />
+        <Route path="/vblackburn/iconic" element={<Iconic />} />
+        <Route path="/vblackburn/popular" element={<Popular />} />
+        <Route path="/vblackburn/pineapple-trivia" element={<Pineapple />} />
+        <Route path="/vblackburn/pear-trivia" element={<Pear />} />
+        <Route path="/vblackburn/watermelon-trivia" element={<Watermelon />} />
+        <Route path="/vblackburn/lemon-trivia" element={<Lemon />} />
       </Routes>
     </Router>
   );
