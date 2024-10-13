@@ -51,11 +51,6 @@ function Navbar() {
                 Iconic
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/vblackburn/popular" className="nav-links-mobile" onClick={closeMobileMenu}>
-                popular
-              </Link>
-            </li>
           </ul>
           {/* {button && <Button to="/popular" buttonStyle='btn--outline'>Popular</Button>} */}
         </div>
