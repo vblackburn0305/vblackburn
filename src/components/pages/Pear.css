@@ -1,0 +1,39 @@
+.pear-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .pear-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pear-table th, .pear-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .pear-table th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .pear-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .pear-table tr:hover {
+    background-color: #e1f5e1;
+  }
+  

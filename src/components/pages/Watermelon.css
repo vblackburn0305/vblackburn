@@ -1,0 +1,61 @@
+.watermelon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.watermelon-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.country img {
+    width: 100%;
+    max-width: 400px;
+    border: solid 2px black;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.country p {
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .country {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .country img {
+        margin-right: 20px;
+        max-width: 300px;
+    }
+
+    .country p {
+        text-align: left;
+        width: 60%;
+    }
+}
+.short-image {
+    height: 200px;
+    object-fit: cover;
+  }
+  

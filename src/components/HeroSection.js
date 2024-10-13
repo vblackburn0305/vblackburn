@@ -3,7 +3,6 @@ import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 
-
 function HeroSection() {
   return (
     <div className="hero-container">
@@ -11,22 +10,16 @@ function HeroSection() {
       <h1>Fruits</h1>
       <div className="hero-btns">
         <Button 
-        className="btns" 
-        buttonStyle="btn--outline"
-        buttonSize="btn--large"
+          className="btns" 
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+          to="https://youtu.be/3Qnpjt5KzYQ?si=CiQPtdSg14yLjtm4"
         >
-            GET STARTED
-        </Button>
-        <Button 
-        className="btns" 
-        buttonStyle="btn--primary"
-        buttonSize="btn--large"
-        >
-            WATCH <i className='far fa-play-circle' />
+          Watch Fruit Documentary <i className='far fa-play-circle' />
         </Button>
       </div>
     </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;

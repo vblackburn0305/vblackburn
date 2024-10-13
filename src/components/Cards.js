@@ -13,13 +13,13 @@ function Cards() {
               src='images/img-9.jpg'
               text='Find out which country grows the most pineapples'
               label='Pineapples'
-              path='/pinaple-trivia'
+              path='/pineapple-trivia'
             />
             <CardItem
               src='images/img-2.jpg'
-              text='Learn about apples from the folks at Apple Holler'
+              text='Learn about apples from the New York Apple Association'
               label='Apples'
-              path='/apple-trivia'
+              path='https://www.applesfromny.com/about-nyaa/apple-trivia/'
             />
           </ul>
           <ul className='cards__items'>
