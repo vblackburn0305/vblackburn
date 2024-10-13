@@ -16,7 +16,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/vblackburn" element={<Home />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/iconic" element={<Iconic />} />
         <Route path="/popular" element={<Popular />} />
