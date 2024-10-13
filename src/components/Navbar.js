@@ -28,7 +28,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu} style={{ display: 'flex', alignItems: 'center' }}>
+          <Link to="/vblackburn" className="navbar-logo" onClick={closeMobileMenu} style={{ display: 'flex', alignItems: 'center' }}>
             <span>YUMMY</span>
             <i className="fa-solid fa-lemon" style={{ marginLeft: '8px' }}></i>
           </Link>
@@ -37,7 +37,7 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/vblackburn" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
