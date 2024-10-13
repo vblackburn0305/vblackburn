@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/vblackburn0305/static/css/main.ec209016.css",
+    "main.js": "/vblackburn0305/static/js/main.6be4c32c.js",
+    "static/media/img-2.jpg": "/vblackburn0305/static/media/img-2.c7ead6d4a216f2d81820.jpg",
+    "static/media/img-14.jpg": "/vblackburn0305/static/media/img-14.e96952b4ea85be2c7ba6.jpg",
+    "static/media/img-23.jpg": "/vblackburn0305/static/media/img-23.9e6733a9255ab7b2525c.jpg",
+    "static/media/img-1.jpg": "/vblackburn0305/static/media/img-1.67e4e45af5a3d8242384.jpg",
+    "static/media/img-8.jpg": "/vblackburn0305/static/media/img-8.17313094139795e3fef9.jpg",
+    "index.html": "/vblackburn0305/index.html",
+    "main.ec209016.css.map": "/vblackburn0305/static/css/main.ec209016.css.map",
+    "main.6be4c32c.js.map": "/vblackburn0305/static/js/main.6be4c32c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec209016.css",
+    "static/js/main.6be4c32c.js"
+  ]
+}
