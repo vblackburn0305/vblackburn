@@ -1,73 +1,73 @@
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-}
-
-.hero-container {
-  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
-}
-
-.hero-container > h1 {
-  color: #fff;
-  font-size: 100px;
-  margin-top: -200px;
-  margin-bottom: -25px;
-}
-
-.hero-container > p {
-  margin-top: 8px;
-  color: #fff;
-  font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-
-.hero-btns {
-  margin-top: 32px;
-}
-
-.hero-btns .btn {
-  margin: 6px;
-}
-
-.fa-play-circle {
-  margin-left: 4px;
-}
-
-@media screen and (max-width: 960px) {
-  .hero-container > h1 {
-    font-size: 70px;
-    margin-top: -150px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container > h1 {
-    font-size: 50px;
-    margin-top: -100px;
-  }
-
-  .hero-container > p {
-    font-size: 30px;
-  }
-
-  .btn-mobile {
-    display: block;
-    text-decoration: none;
-  }
-
-  .btn {
+/* HERO CONTAINER
+   - White background
+   - Centers content
+   - Allows multiple images and text within */
+   .hero-container {
+    background-color: #fff;       /* White BG for a blog-like look */
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* Center everything horizontally */
+    padding: 40px 20px;           /* Spacing around the section */
+    box-sizing: border-box;       /* Ensure padding doesn’t overflow */
   }
-}
+  
+  /* HERO IMAGE
+     - “Medium” sized: limit its width so it’s not too large
+     - Make sure it scales down on smaller screens */
+  .hero-image {
+    width: 100%;
+    max-width: 800px;            /* Constrain max width on larger screens */
+    height: auto;                /* Keep aspect ratio */
+    object-fit: cover;           /* Nicely crop images if needed */
+    margin-bottom: 20px;         /* Space below the image for text */
+  }
+  
+  /* MAIN HEADLINE / TITLE */
+  .hero-container > h1 {
+    color: #333;                 /* Dark text for contrast on white */
+    font-size: 2.4rem;
+    margin: 0 0 1rem;            /* Space below the heading */
+    text-align: center;          /* Center the heading, optional */
+  }
+  
+  /* PARAGRAPH TEXT
+     - Enough spacing for easy reading
+     - Limit width so lines aren’t too long */
+  .hero-container > p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;            /* Align text width to the image width */
+    margin-bottom: 20px;         /* Separate paragraphs from one another */
+    text-align: left;            /* Or center if you prefer */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* MEDIA QUERIES
+     - Adjust sizes on smaller devices */
+  @media screen and (max-width: 960px) {
+    .hero-container {
+      padding: 30px 15px;
+    }
+    
+    .hero-container > h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      padding: 20px 10px;
+    }
+    
+    .hero-container > h1 {
+      font-size: 1.8rem;
+    }
+    
+    .hero-container > p {
+      font-size: 1rem;
+    }
+  }
+  

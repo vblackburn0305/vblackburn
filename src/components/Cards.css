@@ -1,118 +1,127 @@
+/* CARDS CONTAINER: white background, padding around the section */
 .cards {
-  padding: 4rem;
-  background: #fff;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  margin: 0; /* Remove default margin if any */
 }
 
-h1 {
+/* OPTIONAL: Style your 'Popular fruits!' heading more distinctly */
+.cards h1 {
   text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
 }
 
+/* MAIN WRAPPER: limit overall width to ~blog size (800px) */
 .cards__container {
   display: flex;
-  flex-flow: column;
+  flex-direction: column; /* Single column layout */
   align-items: center;
-  max-width: 1120px;
-  width: 90%;
-  margin: 0 auto;
+  max-width: 800px; /* Adjust this for larger displays if needed */
+  width: 100%;
+  margin: 0 auto; /* Centers the container */
 }
 
+/* WRAPPER: you only need one wrapper to hold your items */
 .cards__wrapper {
-  position: relative;
-  margin: 50px 0 45px;
+  width: 100%;
 }
 
+/* UL containing the cards: single column, gap between each card */
 .cards__items {
-  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between card items */
+  list-style: none; /* Remove bullet styling */
+  padding: 0;
+  margin: 0 0 2rem; /* Space below the list, if desired */
 }
 
+/* INDIVIDUAL CARD: simple column with optional shadow or border */
 .cards__item {
   display: flex;
-  flex: 1;
-  margin: 0 1rem;
-  border-radius: 10px;
+  flex-direction: column;
+  background: #f9f9f9; /* Light gray or white (#fff) if you prefer */
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  overflow: hidden;
 }
 
+/* LINK STYLES: remove decoration, let them fill the card */
 .cards__item__link {
   display: flex;
-  flex-flow: column;
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  border-radius: 10px;
-  overflow: hidden;
+  flex-direction: column;
   text-decoration: none;
+  color: inherit;
 }
 
+/* WRAP for the image + data-category label */
 .cards__item__pic-wrap {
   position: relative;
+  /* Force a 16:9 aspect ratio for uniform sizing */
   width: 100%;
-  padding-top: 67%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  margin-bottom: 0; /* Let’s keep the margin/padding in the .cards__item__info */
 }
 
-.fade-img {
-  animation-name: fade-img;
-  animation-duration: 2s;
-}
-
+/* Overlay label showing data-category attribute */
 .cards__item__pic-wrap::after {
   content: attr(data-category);
   position: absolute;
-  bottom: 0;
-  margin-left: 10px;
+  bottom: 10px;
+  left: 10px;
   padding: 6px 8px;
-  max-width: calc((100%) - 60px);
   font-size: 12px;
   font-weight: 700;
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
+/* ACTUAL IMAGE: fill the container and crop to 16:9 with cover */
 .cards__item__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   display: block;
   width: 100%;
-  max-width: 100%;
   height: 100%;
-  max-height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Crops the image to fill the container */
   transition: all 0.2s linear;
+  margin: 0 auto; /* Center the image horizontally */
+  image-rendering: auto; /* Optimize for HD displays */
+  image-rendering: crisp-edges; /* Ensure clarity on high DPI devices */
 }
 
+/* Subtle hover zoom for high-res images */
 .cards__item__img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
+/* CONTENT/INFO SECTION BELOW THE IMAGE */
 .cards__item__info {
-  padding: 20px 30px 30px;
+  padding: 1rem 1.5rem;
 }
 
 .cards__item__text {
   color: #252e48;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0; /* Use the container’s padding for spacing */
 }
 
-@media only screen and (min-width: 1200px) {
-  .content__blog__container {
-    width: 84%;
+/* MEDIA QUERIES (Optional) */
+@media only screen and (max-width: 768px) {
+  .cards {
+    padding: 1rem 0.5rem;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .cards__items {
-    display: flex;
+  .cards__item__info {
+    padding: 0.75rem 1rem;
   }
-}
 
-@media only screen and (max-width: 1024px) {
-  .cards__item {
-    margin-bottom: 2rem;
+  .cards h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 }

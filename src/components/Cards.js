@@ -1,12 +1,11 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import pineappleImage from '../images/img-9.jpg';
-import appleImage from '../images/img-2.jpg';
-import pearImage from '../images/img-5.jpg';
-import watermelonImage from '../images/img-4.jpg';
-import lemonImage from '../images/img-8.jpg';
-
+import mexicanImage from '../images/Mexican.webp';
+import frenchImage from '../images/French.jpg';
+import indianImage from '../images/Indian.jpg';
+import barImage from '../images/Bar.jpg';
+import japaneseImage from '../images/Japanese.jpg';
 function Cards() {
   return (
     <div className='cards'>
@@ -15,13 +14,13 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src={pineappleImage}
+              src={mexicanImage}
               text='Find out which country grows the most pineapples'
               label='Pineapples'
               path='/pineapple-trivia'
             />
             <CardItem
-              src={appleImage}
+              src={frenchImage}
               text='Learn about apples from the New York Apple Association'
               label='Apples'
               path='https://www.applesfromny.com/about-nyaa/apple-trivia/'
@@ -29,19 +28,19 @@ function Cards() {
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src={pearImage}
+              src={barImage}
               text='Learn which country is responsible for producing most of the worlds pears'
               label='Pears'
               path='/pear-trivia'
             />
             <CardItem
-              src={watermelonImage}
+              src={indianImage}
               text='Find out where watermelons orginiated from'
               label='Watermelons'
               path='/watermelon-trivia'
             />
             <CardItem
-              src={lemonImage}
+              src={japaneseImage}
               text='Click here if you like sour fruits'
               label='Lemons'
               path='/lemon-trivia'
