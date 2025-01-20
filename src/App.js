@@ -9,6 +9,7 @@ import Pineapple from './components/pages/Pineapple';
 import Pear from './components/pages/Pear';
 import Watermelon from './components/pages/Watermelon';
 import Lemon from './components/pages/Lemon';
+import Apple from './components/pages/Apple';
 
 function App() {
   return (
@@ -16,13 +17,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/favorite" element={<Favorite />} />
+        <Route path="/apple" element={<Apple />} />
         <Route path="/iconic" element={<Iconic />} />
-        <Route path="/popular" element={<Popular />} />
-        <Route path="/pineapple-trivia" element={<Pineapple />} />
-        <Route path="/pear-trivia" element={<Pear />} />
-        <Route path="/watermelon-trivia" element={<Watermelon />} />
-        <Route path="/lemon-trivia" element={<Lemon />} />
       </Routes>
     </Router>
   );

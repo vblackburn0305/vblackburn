@@ -1,8 +1,7 @@
-/* CARDS CONTAINER: white background, padding around the section */
 .cards {
   background-color: #fff;
   padding: 2rem 1rem;
-  margin: 0; /* Remove default margin if any */
+  margin: 0;
 }
 
 /* OPTIONAL: Style your 'Popular fruits!' heading more distinctly */
@@ -42,9 +41,9 @@
 .cards__item {
   display: flex;
   flex-direction: column;
-  background: #f9f9f9; /* Light gray or white (#fff) if you prefer */
+  background-color: #fff; /* Same as body background */
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); /* Optional */
   overflow: hidden;
 }
 
@@ -63,7 +62,7 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  margin-bottom: 0; /* Let’s keep the margin/padding in the .cards__item__info */
+  margin-bottom: 0; 
 }
 
 /* Overlay label showing data-category attribute */
@@ -79,6 +78,12 @@
   background-color: #1f98f4;
   box-sizing: border-box;
   border-radius: 4px;
+}
+.example-text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
 }
 
 /* ACTUAL IMAGE: fill the container and crop to 16:9 with cover */
