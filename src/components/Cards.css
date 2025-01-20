@@ -4,7 +4,6 @@
   margin: 0;
 }
 
-/* OPTIONAL: Style your 'Popular fruits!' heading more distinctly */
 .cards h1 {
   text-align: center;
   font-size: 2rem;
@@ -12,42 +11,36 @@
   margin-bottom: 2rem;
 }
 
-/* MAIN WRAPPER: limit overall width to ~blog size (800px) */
 .cards__container {
   display: flex;
-  flex-direction: column; /* Single column layout */
+  flex-direction: column; 
   align-items: center;
-  max-width: 800px; /* Adjust this for larger displays if needed */
+  max-width: 800px; 
   width: 100%;
-  margin: 0 auto; /* Centers the container */
+  margin: 0 auto; 
 }
 
-/* WRAPPER: you only need one wrapper to hold your items */
 .cards__wrapper {
   width: 100%;
 }
 
-/* UL containing the cards: single column, gap between each card */
 .cards__items {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Space between card items */
-  list-style: none; /* Remove bullet styling */
+  gap: 2rem; 
+  list-style: none; 
   padding: 0;
-  margin: 0 0 2rem; /* Space below the list, if desired */
+  margin: 0 0 2rem; 
 }
-
-/* INDIVIDUAL CARD: simple column with optional shadow or border */
 .cards__item {
   display: flex;
   flex-direction: column;
-  background-color: #fff; /* Same as body background */
+  background-color: #fff; 
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); /* Optional */
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17); 
   overflow: hidden;
 }
 
-/* LINK STYLES: remove decoration, let them fill the card */
 .cards__item__link {
   display: flex;
   flex-direction: column;
@@ -55,17 +48,14 @@
   color: inherit;
 }
 
-/* WRAP for the image + data-category label */
 .cards__item__pic-wrap {
   position: relative;
-  /* Force a 16:9 aspect ratio for uniform sizing */
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   margin-bottom: 0; 
 }
 
-/* Overlay label showing data-category attribute */
 .cards__item__pic-wrap::after {
   content: attr(data-category);
   position: absolute;
@@ -86,24 +76,21 @@
   line-height: 1.4;
 }
 
-/* ACTUAL IMAGE: fill the container and crop to 16:9 with cover */
 .cards__item__img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crops the image to fill the container */
+  object-fit: cover; 
   transition: all 0.2s linear;
-  margin: 0 auto; /* Center the image horizontally */
-  image-rendering: auto; /* Optimize for HD displays */
-  image-rendering: crisp-edges; /* Ensure clarity on high DPI devices */
+  margin: 0 auto; 
+  image-rendering: auto; 
+  image-rendering: crisp-edges; 
 }
 
-/* Subtle hover zoom for high-res images */
 .cards__item__img:hover {
   transform: scale(1.05);
 }
 
-/* CONTENT/INFO SECTION BELOW THE IMAGE */
 .cards__item__info {
   padding: 1rem 1.5rem;
 }
@@ -112,10 +99,9 @@
   color: #252e48;
   font-size: 1rem;
   line-height: 1.4;
-  margin: 0; /* Use the container’s padding for spacing */
+  margin: 0; 
 }
 
-/* MEDIA QUERIES (Optional) */
 @media only screen and (max-width: 768px) {
   .cards {
     padding: 1rem 0.5rem;
