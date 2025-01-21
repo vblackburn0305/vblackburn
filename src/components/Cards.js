@@ -26,7 +26,7 @@ function Cards() {
             <li>
               <CardItem
                 src={frenchImage}
-                label="French"
+                label="French: Fleurie"
                 path="https://www.fleurierestaurant.com/"
               />
               <p className="example-text">Fleurie is an upscale fine dining establishment located in Downtown Charlottesville. They offer modern French cuisine with a la carte & tasting menus.</p>
